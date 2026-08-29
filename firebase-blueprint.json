@@ -1,0 +1,37 @@
+{
+  "entities": {
+    "UserProfile": {
+      "fields": {
+        "userId": { "type": "string", "description": "Firebase Auth UID" },
+        "fullName": { "type": "string", "description": "Farmer's name" },
+        "phone": { "type": "string", "description": "Mobile number" },
+        "email": { "type": "string", "description": "Email address" },
+        "state": { "type": "string", "description": "State name" },
+        "district": { "type": "string", "description": "District name" },
+        "village": { "type": "string", "description": "Village name" },
+        "landAreaAcres": { "type": "number", "description": "Farm land area in acres" },
+        "primaryCrops": { "type": "array", "description": "List of primary crops" },
+        "soilType": { "type": "string", "description": "Soil type" },
+        "irrigationType": { "type": "string", "description": "Irrigation method" },
+        "preferredLanguage": { "type": "string", "description": "Language code (en, hi, mr)" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" },
+        "updatedAt": { "type": "string", "description": "Last updated timestamp" }
+      }
+    },
+    "CropScan": {
+      "fields": {
+        "userId": { "type": "string", "description": "Owner user UID" },
+        "cropName": { "type": "string", "description": "Identified crop" },
+        "condition": { "type": "string", "description": "Identified disease/pest condition" },
+        "conditionType": { "type": "string", "description": "disease, pest, nutrient, healthy" },
+        "confidence": { "type": "number", "description": "Confidence percentage" },
+        "imageUrl": { "type": "string", "description": "Crop photo" },
+        "symptoms": { "type": "array", "description": "List of symptoms" },
+        "immediateSteps": { "type": "array", "description": "Recommended immediate actions" },
+        "prevention": { "type": "array", "description": "Long-term prevention steps" },
+        "expertAdvice": { "type": "string", "description": "Expert note" },
+        "timestamp": { "type": "string", "description": "ISO timestamp" }
+      }
+    }
+  }
+}

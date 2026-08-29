@@ -1,0 +1,12 @@
+{
+  "name": "Smart Krishi Assistant",
+  "description": "Multilingual AI farming companion for crop care, disease & pest identification, real-time weather intelligence, and government schemes in English, Hindi, and Marathi.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
